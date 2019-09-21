@@ -1,3 +1,6 @@
+let strokeColor = [194, 53, 121];
+let strokeColorToggle = false;
+
 function preload() {
   // put preload code here
 }
@@ -8,9 +11,6 @@ function setup() {
   angleMode(DEGREES);
   frameRate(9);
 }
-
-let strokeColor = [194, 53, 121];
-let strokeColorToggle = false;
 
 function draw() {
   translate(windowWidth / 2 - width / 5, windowHeight / 2 - width / 5);
