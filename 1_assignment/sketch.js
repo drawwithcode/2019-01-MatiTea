@@ -33,6 +33,7 @@ function draw() {
   }
 }
 
+
 function mouseClicked() {
   if (strokeColorToggle === false) {
     strokeColor = [60, 35, 34];
