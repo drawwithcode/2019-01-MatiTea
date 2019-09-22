@@ -13,6 +13,9 @@ function setup() {
 }
 
 function draw() {
+  textSize(20);
+  text('Click to change stroke color', 150, 100);
+
   translate(windowWidth / 2 - width / 5, windowHeight / 2 - width / 5);
 
   points = 90; // number of points
@@ -21,7 +24,7 @@ function draw() {
   angle = 0;
   angle = angle + pointAngle;
 
-  x = cos(frameCount * angle) * radius; // convert angle to radians for x and y coordinates
+  x = cos(frameCount * angle) * radius;
   y = sin(frameCount * angle) * radius;
 
   stroke(strokeColor);
