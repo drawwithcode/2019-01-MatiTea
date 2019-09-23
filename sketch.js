@@ -7,7 +7,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(224, 161, 117);
+  background(66, 15, 105);
   angleMode(DEGREES);
   frameRate(9);
 }
@@ -28,6 +28,7 @@ function draw() {
   y = sin(frameCount * angle) * radius;
 
   stroke(strokeColor);
+  strokeWeight(1.3);
   strokeCap(ROUND);
   line(2 * radius, radius, radius + x, radius + y); // draw a line from each point back to the centre
 
@@ -38,7 +39,7 @@ function draw() {
 
 function mouseClicked() {
   if (strokeColorToggle === false) {
-    strokeColor = [60, 35, 34];
+    strokeColor = [246, 148, 32];
   } else {
     strokeColor = [194, 53, 121];
   }
