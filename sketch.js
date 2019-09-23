@@ -14,6 +14,8 @@ function setup() {
 
 function draw() {
   textSize(20);
+  fill(255);
+  noStroke();
   text('Click to change stroke color', 150, 100);
 
   translate(windowWidth / 2 - width / 5, windowHeight / 2 - width / 5);
